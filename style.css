@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --azul-oceano: #0A2240;
+    --laranja-sunny: #FF8C00;
+    --branco-gelo: #F0F8FF;
+    --preto-mar: #1C1C1C;
+    --verde-zoro: #228B22;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--azul-oceano);
+    color: var(--branco-gelo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--preto-mar);
+    color: var(--branco-gelo);
+    padding: 2rem 0;
+}
+
+.nav-link {
+    color: var(--laranja-sunny);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--branco-gelo);
+}
+
+.nav-img {
+    width: 120px;
+}
+
+.inicio-fundo {
+    background-image: url('https://static.wikia.nocookie.net/onepiece/images/4/41/Grand_Line_Infobox.png/revision/latest?cb=20250503225138&path-prefix=pt');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+    color: var(--branco-gelo);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.display-4 {
+    font-family: 'Pirata One', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--laranja-sunny);
+}
+
+.btn-primary {
+    background-color: var(--laranja-sunny);
+    color: var(--preto-mar);
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #FF7F50;
+    transform: translateY(-2px);
+}
+
+#sobre {
+    position: relative;
+    padding: 5rem 0;
+    margin: 3rem 0;
+    background: linear-gradient(to right, rgba(10, 34, 64, 0.8), rgba(10, 34, 64, 0.8)),
+                url('img/mapa-pirata.png') top right no-repeat,
+                url('img/rumo-grand-line.png') bottom left no-repeat;
+    background-size: 180px 180px, cover;
+    border-radius: 20px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5em;
+    color: var(--laranja-sunny);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px var(--preto-mar);
+}
+
+#galeria {
+    background-color: var(--preto-mar);
+    padding: 4rem 0;
+    border-radius: 20px;
+}
+
+.fundo-galeria {
+    background: url('img/jolly-roger.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+.img-fluid {
+    border: 4px solid var(--laranja-sunny);
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05) rotate(2deg);
+    border-color: var(--verde-zoro);
+}
+
+#contato {
+    background-color: var(--azul-oceano);
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--laranja-sunny);
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    font-weight: bold;
+}
+
+.formulario label, .formulario h2 {
+    color: var(--laranja-sunny);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--laranja-sunny);
+    color: var(--branco-gelo);
+    border-radius: 8px;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.formulario button {
+    background-color: var(--laranja-sunny);
+    color: var(--preto-mar);
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #FF7F50;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: var(--preto-mar);
+    color: var(--branco-gelo);
+    padding: 2rem 0;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: var(--laranja-sunny);
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: var(--verde-zoro);
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    background-color: var(--laranja-sunny);
+    color: var(--preto-mar);
+    border: none;
+    font-weight: bold;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+.alto-contraste {
+    --azul-oceano: #000000;
+    --laranja-sunny: #FFFF00;
+    --branco-gelo: #FFFFFF;
+    --preto-mar: #000000;
+    --verde-zoro: #00FF00;
+    background-color: var(--preto-mar) !important;
+    color: var(--branco-gelo) !important;
+}
+
+.alto-contraste header, .alto-contraste footer {
+    background-color: #333 !important;
+}
+
+.alto-contraste .nav-link, .alto-contraste h2, .alto-contraste .formulario label {
+    color: var(--laranja-sunny) !important;
+}
+
+.alto-contraste .btn-primary, .alto-contraste .opcoes-acessibilidade button {
+    background-color: var(--laranja-sunny) !important;
+    color: #000 !important;
+}
+
+.alto-contraste .formulario {
+    background-color: #111 !important;
+    border-color: var(--laranja-sunny) !important;
+}
+
+.alto-contraste .form-control {
+    background-color: #333 !important;
+    color: var(--branco-gelo) !important;
+    border-color: var(--laranja-sunny) !important;
+}
+
+.alto-contraste .img-fluid {
+    border-color: var(--laranja-sunny) !important;
+}
